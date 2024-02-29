@@ -33,6 +33,8 @@ if (isNewArchitectureEnabled()) {
 
 android {
     compileSdkVersion getExtOrDefault('compileSdkVersion', 30)
+    buildFeatures.buildConfig true
+    namespace 'com.th3rdwave.safeareacontext'
 
     // Used to override the NDK path/version on internal CI or by allowing
     // users to customize the NDK path/version from their root project (e.g. for M1 support)
